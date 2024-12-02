@@ -1,0 +1,70 @@
+/* Services Section Styling */
+.services {
+  background-color: grey; /* Black background */
+  color: #ffffff; /* White text for services */
+  padding: 50px 20px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Vertical LEISTUNGEN */
+.vertical-text {
+  writing-mode: vertical-rl; /* Vertical text */
+  transform: rotate(180deg); /* Adjust orientation */
+  font-size: 80px; /* Larger text */
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  position: absolute;
+  left: 120px; /* Shifted to align under command image */
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg); /* Center vertically */
+  letter-spacing: 8px; /* Space between letters */
+}
+
+/* Columns Container */
+.services-columns {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Space between columns */
+  max-width: 1400px; /* Wider container */
+  margin: 0 auto;
+}
+
+/* Individual Column */
+.services-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between service items */
+}
+
+/* Service Item */
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px; /* Space between icon and text */
+}
+
+/* Icon */
+.service-item .icon {
+  width: 25px; /* Adjust icon size */
+  height: 25px;
+}
+
+/* Service Title */
+.service-title {
+  font-size: 20px; /* Larger title */
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff; /* White text */
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Service Description */
+.service-description {
+  font-size: 16px; /* Normal text size */
+  text-transform: uppercase; /* Capitalized text */
+  color: #dddddd; /* Slightly lighter color for description */
+  line-height: 1.5;
+}

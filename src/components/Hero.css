@@ -1,0 +1,65 @@
+/* Hero Section Styling */
+/* Hero Section Styling */
+.hero {
+  background-color: grey; /* Grey background */
+  color: #ffffff; /* White text */
+  padding: 50px 20px;
+  text-align: left;
+  margin-top: 0;
+}
+
+/* Content Container */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Title Section */
+.hero-title h1 {
+  font-size: 78px; /* Large font size */
+  line-height: 1.2; /* Space between lines */
+  margin: 0;
+}
+
+/* Ordination Times Section */
+.hero-ordination {
+  max-width: 300px;
+}
+
+.hero-ordination h2 {
+  font-size: 28px; /* Subtitle font size */
+  margin-bottom: 10px;
+}
+
+.hero-ordination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-ordination li {
+  font-size: 16px; /* Smaller font for ordination times */
+  line-height: 1.5;
+}
+
+/* Team Photo Section */
+.hero-photo {
+  text-align: center;
+  margin-top: 20px;
+  position: relative; /* Allows absolute positioning of the signature */
+  display: inline-block; /* Ensure image acts as a bounding container */
+}
+
+.hero-photo img {
+  max-width: 80%; /* Responsive image */
+  height: auto;
+  border-radius: 8px; /* Slight rounding of corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Shadow effect */
+}
+
+
+

@@ -1,0 +1,120 @@
+/* General Header Styling */
+.header {
+  width: 100%;
+  background-color: grey; /* Black background */
+  padding: 10px 0;
+  box-sizing: border-box;
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between nav and actions */
+  max-width: 1100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+  gap: 120px; /* Spacing between navigation items */
+  background-color: #cecdcd; /* Light grey rectangle background */
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.nav-list li {
+  font-size: 14px;
+  color: #272626; /* Black text */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-list li:hover {
+  color: #6d6d6e;
+}
+
+/* Actions: Call Now and Language Selection */
+.actions {
+  display: flex;
+  align-items: center; /* Align "Call Now" and language selector on the same row */
+  gap: 30px; /* Space between "Call Now" and language */
+}
+
+/* Call Now Button */
+.call-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #989999, #454546); /* Gradient */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  border-radius: 12px; /* Rounded shape */
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  gap: 8px; /* Space between icon and text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-now:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.phone-icon {
+  font-size: 16px;
+}
+
+/* Language Dropdown */
+.language {
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* White text */
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  gap: 5px;
+}
+
+.dropdown-arrow {
+  font-size: 16px; /* Stylish arrow */
+  color: #ffffff; /* Match text color */
+  transition: transform 0.3s ease;
+}
+
+.language:hover .dropdown-arrow {
+  transform: rotate(180deg); /* Rotate arrow on hover */
+}
+
+/* Dropdown Menu */
+.language-dropdown {
+  position: absolute;
+  top: 30px; /* Below the language selector */
+  right: 0; /* Align to the right of the container */
+  background-color: #ffffff; /* White dropdown background */
+  color: #000000; /* Black text */
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  z-index: 1000; /* Ensure it appears on top */
+}
+
+.language-dropdown li {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-dropdown li:hover {
+  background-color: #f1f1f1; /* Light grey on hover */
+}

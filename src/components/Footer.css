@@ -1,0 +1,63 @@
+/* Footer Section */
+.footer {
+  background-color: gray; /* Black background */
+  color: #ffffff; /* White text */
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Address Section */
+.footer-address h3 {
+  font-size: 22px; /* Larger heading */
+  margin-bottom: 10px;
+}
+
+.footer-address p {
+  font-size: 18px; /* Larger text */
+  margin: 5px 0;
+}
+
+.footer-address .contact-info,
+.footer-address .social-media {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  margin: 10px 0;
+}
+
+.footer-address .icon {
+  font-size: 20px; /* Icon size */
+  color: #fbf9f9; /* Blue color for icons */
+}
+
+.footer-address a {
+  font-size: 18px; /* Larger link text */
+  color: #ffffff; /* White text */
+  text-decoration: none;
+}
+
+.footer-address a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Google Maps Section */
+.footer-map {
+  width: 50%; /* Half the footer width */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-map iframe {
+  border-radius: 8px; /* Rounded corners for map */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
