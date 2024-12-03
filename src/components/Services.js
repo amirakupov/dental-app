@@ -8,7 +8,7 @@ const servicesLeftColumn = [
   },
   {
     title: "Zahnersatz",
-    description: "Kronen, Brücken und Prothesen Implantatgetragener Zahnersatz Total- und Teilprothesen",
+    description: "Kronen, Brücken und Prothesen Implantatgetragener Zahnersatz Total und Teilprothesen",
   },
   {
     title: "Füllungstherapie",

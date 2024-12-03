@@ -11,11 +11,11 @@ const teamMembers = [
     photo: "biba1.png", 
   },
   {
-    name: "Sandra Pauser",
+    name: "Anja Ercegovac",
     photo: "biba3.png", 
   },
   {
-    name: "Julia Berg",
+    name: "Lisa Vorkonyi",
     photo: "biba45.png", 
   },
 ];

@@ -11,6 +11,7 @@ const Hero = () => {
             DR.MED.DENT. <br />
             TATJANA <br />
             LADSTÄTTER
+            <img src="e-card.png" alt="Decoration" className="title-image" />
           </h1>
         </div>
 
@@ -22,7 +23,7 @@ const Hero = () => {
             <li>DIENSTAG: 9:00 - 15:00</li>
             <li>MITTWOCH: 9:00 - 18:00</li>
             <li>DONNERSTAG: 9:00 - 13:00</li>
-            <li>FREITEG: GESCHLOSSEN</li>
+            <li>FREITAG: GESCHLOSSEN</li>
             <li>SAMSTAG: GESCHLOSSEN</li>
             <li>SONNTAG: GESCHLOSSEN</li>
           </ul>
@@ -32,15 +33,6 @@ const Hero = () => {
       {/* Team Photo */}
       <div className="hero-photo">
         <img src="hero.jpg" alt="Team" />
-        {/* Signature Container
-        <div className="signature-container">
-          <img
-            className="signature"
-            src="/signature.png"
-            alt="Signature"
-          />
-          <p>Dr.med.dent. Tatjana Ladstätter</p>
-        </div> */}
       </div>
     </section>
   );

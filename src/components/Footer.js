@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { FaInstagram, FaPhone } from 'react-icons/fa'; 
+import { FaInstagram, FaPhone, FaMailBulk} from 'react-icons/fa'; 
 
 const Footer = () => {
   return (
@@ -15,6 +15,10 @@ const Footer = () => {
           <div className="contact-info">
             <FaPhone className="icon" />
             <a href="tel:+4313671607">+43 1 367 1607</a>
+          </div>
+          <div className="contact-info">
+            <FaMailBulk className="icon" />
+            <a href="mailto:dr.ladstaetter.tanja@gmail.com">dr.ladstaetter.tanja@gmail.com</a>
           </div>
           <div className="social-media">
             <FaInstagram className="icon" />
