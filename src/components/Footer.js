@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Left Section */}
         <div className="footer-address">
           <h3>Dr.med.dent Tatjana Ladstätter</h3>
-          <p>Brauhausstraße 23</p>
+          <p>Brauhausstraße 1</p>
           <p>2320 Schwechat</p>
           <p>Austria</p>
           <div className="contact-info">
@@ -28,17 +28,13 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Right Section: Google Maps */}
+        {/* Right Section: Map Screenshot */}
         <div className="footer-map">
-          <iframe
-            title="Google Maps"
-            src="https://maps.app.goo.gl/8oGWrHysP8vd6kkK6"
-            width="100%"
-            height="250"
-            style={{ border: "0" }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+          <img
+            src="address-dental.png" // Update with the actual path
+            alt="Google Map of Brauhausstraße 23, 2320 Schwechat"
+            className="static-map"
+          />
         </div>
       </div>
     </footer>

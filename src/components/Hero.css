@@ -2,7 +2,7 @@
 .hero {
   background-color: #9d9f9f; /* Grey background */
   color: #ffffff; /* White text */
-  padding: 50px 20px;
+  padding: 10px 20px;
   text-align: left;
   margin-top: 0;
 }
@@ -11,11 +11,18 @@
 .hero-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch; /* Stretch items to align top and bottom */
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
-  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  
+}
+
+.hero-title {
+  display: flex; /* Ensure flex alignment */
+  flex-direction: column;
+  justify-content: space-between; /* Space title evenly within the container */
 }
 
 /* Title Section */
@@ -28,26 +35,33 @@
 
 /* Ordination Times Section */
 .hero-ordination {
+  display: flex; /* Ensure flex alignment */
+  flex-direction: column;
+  justify-content: space-between; /* Space ordination times evenly */
   max-width: 300px;
+  margin-right: -40px;
 }
 
 .hero-ordination h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 28px; /* Subtitle font size */
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .hero-ordination ul {
   font-family: 'Montserrat', sans-serif;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: -100px 0 0;
+  margin-bottom: 5px;
 }
 
 .hero-ordination li {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px; /* Smaller font for ordination times */
-  line-height: 1.5;
+  line-height: 1.4; /* Slightly tighter spacing between lines */
+  margin-bottom: 8px; /* Add small spacing between list items */
 }
 
 /* Team Photo Section */
@@ -60,7 +74,7 @@
 }
 
 .hero-photo img {
-  max-width: 80%; /* Responsive image */
+  max-width: 77%; /* Responsive image */
   height: auto;
   border-radius: 8px; /* Slight rounding of corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Shadow effect */
@@ -71,7 +85,7 @@
   .hero-content {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align for smaller screens */
-    gap: 30px; /* Adjust spacing */
+    gap: 20px; /* Adjust spacing */
   }
 
   .hero-title h1 {
@@ -82,18 +96,25 @@
   .hero-ordination {
     text-align: center; /* Center align ordination times */
     max-width: 100%; /* Allow full width */
+    margin-right: 0;
   }
 
   .hero-ordination h2 {
-    font-size: 24px; /* Reduce subtitle size */
+    font-size: 22px; /* Reduce subtitle size */
+  }
+
+  .hero-ordination ul {
+    margin-top: 10px; /* Add spacing between ul and h2 */
   }
 
   .hero-ordination li {
     font-size: 14px; /* Smaller font for mobile */
+    margin-bottom: 5px; /* Compact spacing */
   }
 
   .hero-photo img {
     max-width: 100%; /* Full width on smaller screens */
+    margin-top: 20px; /* Add spacing for separation */
   }
 }
 
@@ -103,12 +124,20 @@
     line-height: 1.1; /* Adjust line spacing */
   }
 
+  .hero-ordination {
+    margin-top: 10px; /* Add spacing for alignment */
+  }
+
   .hero-ordination h2 {
     font-size: 20px; /* Smaller subtitle for very small screens */
   }
 
   .hero-ordination li {
     font-size: 12px; /* Further reduce font size */
+  }
+
+  .hero-photo img {
+    max-width: 90%; /* Slight reduction for better spacing */
   }
 }
 

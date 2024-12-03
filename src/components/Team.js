@@ -3,24 +3,20 @@ import './Team.css';
 
 const teamMembers = [
   {
-    name: "Dr.med.dent Tatjana Ladstätter",
-    title: "Head Dentist",
-    photo: "bro1.jpeg", // Replace with actual photo path
+    name: "Tatjana Ladstätter",
+    photo: "biba2.png",
   },
   {
-    name: "Dr. Anton Seliverstov",
-    title: "Oral Surgeon",
-    photo: "bro2.jpeg", // Replace with actual photo path
+    name: "Anton Seliverstov",
+    photo: "biba1.png", 
   },
   {
-    name: "Dr. Sandra Pauser",
-    title: "Orthodontist",
-    photo: "bro3.jpg", // Replace with actual photo path
+    name: "Sandra Pauser",
+    photo: "biba3.png", 
   },
   {
-    name: "Dr. Julia Berg",
-    title: "Pediatric Dentist",
-    photo: "bro4.jpeg", // Replace with actual photo path
+    name: "Julia Berg",
+    photo: "biba45.png", 
   },
 ];
 

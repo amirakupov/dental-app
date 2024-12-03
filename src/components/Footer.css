@@ -9,13 +9,22 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; /* Align the top edges */
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  height: auto; /* Ensure the container adjusts dynamically */
 }
 
 /* Address Section */
+.footer-address {
+  flex: 1; /* Allow equal space distribution */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  margin-top: 0; /* Remove any unnecessary margin */
+}
+
 .footer-address h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px; /* Larger heading */
@@ -37,7 +46,7 @@
 
 .footer-address .icon {
   font-size: 20px; /* Icon size */
-  color: #fbf9f9; /* Blue color for icons */
+  color: #fbf9f9; /* Icon color */
 }
 
 .footer-address a {
@@ -50,16 +59,73 @@
   text-decoration: underline; /* Underline on hover */
 }
 
-/* Google Maps Section */
+/* Static Map Image Section */
 .footer-map {
-  width: 50%; /* Half the footer width */
-  height: auto;
+  flex: 1; /* Allow equal space distribution */
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align content to the top */
   justify-content: center;
+  margin-top: 20px; /* Add spacing below map */
 }
 
-.footer-map iframe {
-  border-radius: 8px; /* Rounded corners for map */
+.static-map {
+  border-radius: 8px; /* Rounded corners for aesthetics */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  max-width: 100%; /* Ensure responsiveness */
+  height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align all elements */
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .footer-map {
+    order: -1; /* Move map above the text */
+    width: 100%; /* Full width for map */
+    margin-bottom: 20px;
+  }
+
+  .footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align address content */
+    gap: 15px; /* Add spacing between address, phone, and Instagram */
+  }
+
+  .footer-address h3 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  .footer-address p,
+  .footer-address a {
+    font-size: 16px; /* Adjust text size */
+  }
+
+  .footer-address .contact-info,
+  .footer-address .social-media {
+    justify-content: center; /* Center-align phone and Instagram */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-address h3 {
+    font-size: 18px; /* Further reduce heading size */
+  }
+
+  .footer-address p,
+  .footer-address a {
+    font-size: 14px; /* Smaller text */
+  }
+
+  .footer-container {
+    gap: 15px; /* Reduce spacing */
+  }
+
+  .static-map {
+    border-radius: 5px; /* Smaller rounding for compact design */
+  }
 }

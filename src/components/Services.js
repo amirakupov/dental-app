@@ -4,46 +4,46 @@ import './Services.css';
 const servicesLeftColumn = [
   {
     title: "Prophylaxe & Zahnreinigung",
-    description: "PROFESSIONAL CLEANING AND DENTAL HYGIENE",
+    description: "Professionelle Zahnreinigung (PZR)Parodontitisbehandlung Individuelle Beratung zur Mundhygiene",
   },
   {
     title: "Zahnersatz",
-    description: "CROWNS, BRIDGES, AND DENTAL PROSTHETICS",
+    description: "Kronen, Brücken und Prothesen Implantatgetragener Zahnersatz Total- und Teilprothesen",
   },
   {
     title: "Füllungstherapie",
-    description: "FILLINGS USING HIGH-QUALITY MATERIALS",
+    description: "Zahnfüllungen aus Kunststoff oder Keramik Amalgamfreie Füllungen Reparaturen und Inlays",
   },
   {
     title: "Zahnimplantate",
-    description: "INDIVIDUAL IMPLANT SOLUTIONS",
+    description: "Individuelle Implantatversorgung Knochentransplantation und Augmentation Sofortimplantation",
   },
   {
     title: "Kieferorthopädie",
-    description: "MODERN ORTHODONTIC TREATMENTS",
+    description: "MODERNE kieferorthopädische Behandlungen"
   },
 ];
 
 const servicesRightColumn = [
   {
     title: "Wurzelbehandlung",
-    description: "ROOT CANAL TREATMENT WITH ADVANCED TECHNIQUES",
+    description: "Moderne Wurzelkanalbehandlung Schmerzarme Verfahren Erfolgskontrolle und Nachbehandlung",
   },
   {
     title: "Ästhetische Zahnmedizin",
-    description: "COSMETIC DENTISTRY INCLUDING WHITENING",
+    description: "Zahnaufhellung (Bleaching) Veneers und Lumineers Zahnumformung und kosmetische Korrekturen",
   },
   {
     title: "Notfallbehandlung",
-    description: "IMMEDIATE HELP FOR DENTAL EMERGENCIES",
+    description: "Akute Zahnschmerzen und Verletzungen Zahnunfälle und Zahnausfall Schmerztherapie und sofortige Hilfe",
   },
   {
     title: "Beratung und Diagnostik",
-    description: "PERSONALIZED CONSULTATION AND DIAGNOSIS",
+    description: "Umfassende zahnärztliche Untersuchung Röntgenuntersuchung und digitale Bildgebung Individuelle Therapieplanung",
   },
   {
     title: "Kinderzahnheilkunde",
-    description: "CHILD-FRIENDLY DENTAL CARE",
+    description: "Frühzeitige Kariesprophylaxe Fissurenversiegelung Kinderfreundliche Behandlungen",
   },
 ];
 
@@ -53,7 +53,7 @@ const Services = () => {
       <div className="vertical-text">LEISTUNGEN</div>
       <div className="services-columns">
         {/* Left Column */}
-        <div className="services-column">
+        <div className="services-column left-column">
           {servicesLeftColumn.map((service, index) => (
             <div key={index} className="service-item">
               <img src="/Vector.png" alt="Golden Icon" className="icon" />
@@ -81,6 +81,7 @@ const Services = () => {
     </section>
   );
 };
+
 
 export default Services;
 

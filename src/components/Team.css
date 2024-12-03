@@ -1,14 +1,14 @@
 /* Team Section */
 .team {
     background-color: #f8f8f8; /* Light grey background */
-    padding: 50px 20px;
+    padding: 1px 0;
     text-align: center;
   }
   
   .team h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: #333; /* Dark text color */
   }
   
@@ -24,13 +24,13 @@
   /* Team Member Card */
   .team-member {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff; /* White card background */
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 70px;
   }
   
   .team-member:hover {
@@ -40,8 +40,8 @@
   
   /* Team Member Photo */
   .team-photo {
-    width: 100%; /* Full width inside the card */
-    max-height: 290px; /* Uniform height for all images */
+    width: 90%; /* Full width inside the card */
+    height: 75%; /* Uniform height for all images */
     object-fit: cover; /* Ensures images are cropped uniformly */
     border-radius: 8px; /* Small rounding at corners */
     margin-bottom: 15px;

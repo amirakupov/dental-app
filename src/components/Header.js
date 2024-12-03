@@ -64,12 +64,11 @@ const Header = () => {
             <span>CALL NOW</span>
           </a>
           <div className="language" onClick={() => setLanguageOpen(!languageOpen)}>
-            <span>ENG</span>
+            <span>DEU</span>
             <IoMdArrowDropdown className="dropdown-arrow" />
             {languageOpen && (
               <ul className="language-dropdown">
-                <li>German</li>
-                <li>Russian</li>
+                <li>ENGLISH</li>
               </ul>
             )}
           </div>

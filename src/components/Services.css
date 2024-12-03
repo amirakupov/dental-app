@@ -2,7 +2,7 @@
 .services {
   font-family: 'Montserrat', sans-serif;
   background-color: #9d9f9f; /* Grey background */
-  color: #ffffff; /* White text for services */
+  color: #ffffff; /* White text */
   padding: 50px 20px;
   display: flex;
   align-items: flex-start;
@@ -14,14 +14,27 @@
 .vertical-text {
   writing-mode: vertical-rl; /* Vertical text */
   transform: rotate(180deg); /* Adjust orientation */
-  font-size: 80px; /* Larger text */
+  font-size: 95px; /* Larger text */
   font-weight: bold;
   color: #ffffff; /* White text */
   position: absolute;
-  left: 120px; /* Position relative to layout */
+  left: 155px; /* Position relative to layout */
   top: 50%;
   transform: translateY(-50%) rotate(180deg); /* Center vertically */
-  letter-spacing: 8px; /* Space between letters */
+  letter-spacing: 20px; /* Space between letters */
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-text {
+    font-size: 60px; /* Smaller vertical text */
+    left: 40px; /* Adjust for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vertical-text {
+    display: none; /* Hide vertical text on very small screens */
+  }
 }
 
 /* Columns Container */
@@ -35,6 +48,13 @@
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
+@media screen and (max-width: 768px) {
+  .services-columns {
+    flex-direction: column; /* Stack columns vertically */
+    gap: 40px; /* Increase gap between stacked columns */
+  }
+}
+
 /* Individual Column */
 .services-column {
   display: flex;
@@ -44,15 +64,43 @@
   max-width: 600px; /* Limit width for readability */
 }
 
+@media screen and (max-width: 768px) {
+  .services-column {
+    max-width: 100%; /* Full width for stacked layout */
+    align-items: center; /* Center align for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-column {
+    gap: 20px; /* Reduce spacing for smaller screens */
+  }
+}
+
+/* Left Column Adjustment */
+.services-column.left-column {
+  margin-left: 140px; /* Move the left column slightly */
+}
+
+@media screen and (max-width: 768px) {
+  .services-column.left-column {
+    margin-left: 0; /* Reset to default for smaller screens */
+  }
+}
+
 /* Service Item */
 .service-item {
   display: flex;
   align-items: flex-start;
   gap: 15px; /* Space between icon and text */
 }
+
 @media screen and (max-width: 480px) {
   .service-item {
-    gap: 10px; /* Reduce gap on very small screens */
+    flex-direction: row; /* Ensure icon and text are side by side */
+    align-items: center; /* Center-align icon with title */
+    gap: 10px; /* Reduce gap for smaller screens */
+    text-align: left; /* Ensure text aligns properly */
   }
 }
 
@@ -61,10 +109,10 @@
   width: 25px; /* Adjust icon size */
   height: 25px;
 }
+
 @media screen and (max-width: 480px) {
   .service-item .icon {
-    width: 20px; /* Smaller icon for mobile */
-    height: 20px;
+    flex-shrink: 0;
   }
 }
 
@@ -77,11 +125,15 @@
   display: block;
   margin-bottom: 5px;
 }
+
 @media screen and (max-width: 480px) {
   .service-title {
     font-size: 18px; /* Slightly smaller on mobile */
+    font-weight: bold;
+    font-style: italic;
   }
 }
+
 /* Service Description */
 .service-description {
   font-size: 16px; /* Normal text size */
@@ -89,31 +141,11 @@
   color: #dddddd; /* Slightly lighter color for description */
   line-height: 1.5;
 }
+
 @media screen and (max-width: 480px) {
   .service-description {
-    font-size: 14px; /* Smaller text on mobile */
-  }
-}
-@media screen and (max-width: 1024px) {
-  .vertical-text {
-    font-size: 60px; /* Smaller vertical text */
-    left: 60px; /* Adjust for smaller screens */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .vertical-text {
-    display: none; /* Hide vertical text on smaller screens */
-  }
-}
-@media screen and (max-width: 768px) {
-  .services-columns {
-    flex-direction: column; /* Stack columns vertically */
-    gap: 40px; /* Increase gap between stacked columns */
-  }
-}
-@media screen and (max-width: 768px) {
-  .services-column {
-    max-width: 100%; /* Full width for stacked layout */
+    font-size: 14px; /* Smaller text for descriptions */
+    line-height: 1.4;
+    margin-top: 4px; /* Add spacing between title and description */
   }
 }

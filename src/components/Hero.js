@@ -8,22 +8,23 @@ const Hero = () => {
         {/* Title on the Left */}
         <div className="hero-title">
           <h1>
-            Dr.med.dent. <br />
-            Tatjana <br />
-            Ladstätter
+            DR.MED.DENT. <br />
+            TATJANA <br />
+            LADSTÄTTER
           </h1>
         </div>
 
         {/* Ordination Times on the Right */}
         <div className="hero-ordination">
-          <h2>Ordination Times:</h2>
+          <h2>ORDINATIONSZEITEN:</h2>
           <ul>
-            <li>Tuesday: 9 AM - 3 PM</li>
-            <li>Wednesday: 9 AM - 6 PM</li>
-            <li>Thursday: 9 AM - 1 PM</li>
-            <li>Friday: Closed</li>
-            <li>Saturday: Closed</li>
-            <li>Monday: 12 PM - 6 PM</li>
+            <li>MONTAG: 12:00 - 18:00</li>
+            <li>DIENSTAG: 9:00 - 15:00</li>
+            <li>MITTWOCH: 9:00 - 18:00</li>
+            <li>DONNERSTAG: 9:00 - 13:00</li>
+            <li>FREITEG: GESCHLOSSEN</li>
+            <li>SAMSTAG: GESCHLOSSEN</li>
+            <li>SONNTAG: GESCHLOSSEN</li>
           </ul>
         </div>
       </div>
