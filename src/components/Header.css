@@ -1,10 +1,10 @@
 /* General Header Styling */
 .header {
   width: 100%;
-  background-color: grey; /* Black background */
+  background-color: grey; /* Background color */
   padding: 10px 0;
   box-sizing: border-box;
-
+  margin-bottom: 0;
 }
 
 .nav {
@@ -19,13 +19,15 @@
 .nav-list {
   display: flex;
   list-style: none;
-
   margin: 0;
   padding: 0;
   gap: 120px; /* Spacing between navigation items */
   background-color: #cecdcd; /* Light grey rectangle background */
   border-radius: 12px;
   padding: 10px 20px;
+}
+.nav-list.open {
+  display: none; /* Hidden in mobile version */
 }
 
 .nav-list li {
@@ -72,7 +74,6 @@
   font-size: 16px;
 }
 
-/* Language Dropdown */
 .language {
   display: flex;
   align-items: center;
@@ -81,23 +82,13 @@
   cursor: pointer;
   position: relative;
   gap: 5px;
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
-.dropdown-arrow {
-  font-size: 16px; /* Stylish arrow */
-  color: #ffffff; /* Match text color */
-  transition: transform 0.3s ease;
-}
-
-.language:hover .dropdown-arrow {
-  transform: rotate(180deg); /* Rotate arrow on hover */
-}
-
-/* Dropdown Menu */
 .language-dropdown {
   position: absolute;
   top: 30px; /* Below the language selector */
-  right: 0; /* Align to the right of the container */
+  left: 0; /* Align with the left edge */
   background-color: #ffffff; /* White dropdown background */
   color: #000000; /* Black text */
   list-style: none;
@@ -105,7 +96,17 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   min-width: 120px;
-  z-index: 1000; /* Ensure it appears on top */
+  z-index: 1000;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevent interaction when hidden */
+  transform: translateY(-10px); /* Slide effect */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.language:hover .language-dropdown {
+  opacity: 1; /* Show dropdown */
+  visibility: visible;
+  transform: translateY(0); /* Slide into place */
 }
 
 .language-dropdown li {
@@ -117,4 +118,81 @@
 
 .language-dropdown li:hover {
   background-color: #f1f1f1; /* Light grey on hover */
+}
+
+
+/* Burger Menu */
+.burger-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Small distance from the right edge */
+  cursor: pointer;
+  z-index: 2000; /* Ensure it stays above other elements */
+}
+
+/* Mobile Menu Styling */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Hidden initially */
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* Dim background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  transition: right 0.5s ease; /* Smooth transition */
+  z-index: 1500;
+}
+
+.mobile-menu.active {
+  right: 0; /* Bring into view */
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-nav-list li {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobile-nav-list li:hover {
+  color: #ccc;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: block; /* Show burger menu */
+  }
+
+  .nav-list {
+    display: none; /* Hide nav list */
+  }
+
+  .actions {
+    display: none; /* Hide actions */
+  }
+  .language {
+    position: absolute; /* Position it in the top left */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    z-index: 2000;
+  }
+}
+
+body.mobile-menu-open {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: hidden; /* Prevent vertical scroll */
 }
