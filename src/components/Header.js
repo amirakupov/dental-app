@@ -22,6 +22,10 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
+        {/* Tooth Icon */}
+        <div className="tooth-icon">
+          <img src="/tooth.svg" alt="Tooth Icon" />
+        </div>
         <div className="burger-menu" onClick={toggleMenu}>
           {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>

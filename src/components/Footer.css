@@ -1,11 +1,13 @@
 /* Footer Section */
 .footer {
+  font-family: 'Montserrat', sans-serif;
   background-color: gray; /* Black background */
   color: #ffffff; /* White text */
   padding: 40px 20px;
 }
 
 .footer-container {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

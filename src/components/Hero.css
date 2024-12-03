@@ -1,6 +1,6 @@
 /* Hero Section Styling */
 .hero {
-  background-color: grey; /* Grey background */
+  background-color: #9d9f9f; /* Grey background */
   color: #ffffff; /* White text */
   padding: 50px 20px;
   text-align: left;
@@ -15,10 +15,12 @@
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
 /* Title Section */
 .hero-title h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 78px; /* Large font size */
   line-height: 1.2; /* Space between lines */
   margin: 0;
@@ -30,17 +32,20 @@
 }
 
 .hero-ordination h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 28px; /* Subtitle font size */
   margin-bottom: 10px;
 }
 
 .hero-ordination ul {
+  font-family: 'Montserrat', sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .hero-ordination li {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px; /* Smaller font for ordination times */
   line-height: 1.5;
 }
@@ -51,6 +56,7 @@
   margin-top: 20px;
   position: relative; /* Allows absolute positioning of the signature */
   display: inline-block; /* Ensure image acts as a bounding container */
+  width: 100%; /* Full width for responsiveness */
 }
 
 .hero-photo img {
@@ -59,6 +65,53 @@
   border-radius: 8px; /* Slight rounding of corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Shadow effect */
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align for smaller screens */
+    gap: 30px; /* Adjust spacing */
+  }
+
+  .hero-title h1 {
+    font-size: 48px; /* Reduce title size */
+    text-align: center; /* Center align title */
+  }
+
+  .hero-ordination {
+    text-align: center; /* Center align ordination times */
+    max-width: 100%; /* Allow full width */
+  }
+
+  .hero-ordination h2 {
+    font-size: 24px; /* Reduce subtitle size */
+  }
+
+  .hero-ordination li {
+    font-size: 14px; /* Smaller font for mobile */
+  }
+
+  .hero-photo img {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 36px; /* Further reduce title size */
+    line-height: 1.1; /* Adjust line spacing */
+  }
+
+  .hero-ordination h2 {
+    font-size: 20px; /* Smaller subtitle for very small screens */
+  }
+
+  .hero-ordination li {
+    font-size: 12px; /* Further reduce font size */
+  }
+}
+
 
 
 

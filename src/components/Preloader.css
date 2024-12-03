@@ -1,0 +1,30 @@
+/* Preloader Styling */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9d9f9f; /* Grey background */
+    z-index: 9999; /* Highest layer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%); /* Start offscreen */
+  }
+  
+  .preloader-text {
+    text-align: center; /* Center-align the text */
+  }
+  
+  .preloader-text h1,
+  .preloader-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0; /* Start hidden for animation */
+  }
+  
+  
+  
