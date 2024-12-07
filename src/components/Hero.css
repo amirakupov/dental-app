@@ -86,7 +86,34 @@
   border-radius: 8px; /* Slight rounding of corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Shadow effect */
 }
+/* Extra Large Screens (28-inch monitors) */
+@media screen and (min-width: 2560px) {
+  .hero-photo img {
+    max-width: 1200px; /* Limit the width for ultra-wide screens */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}
 
+/* Large Screens (Laptops and Desktop Monitors) */
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .hero-photo img {
+    max-width: 1100px; /* Scale image for standard large screens */
+    margin: 0 auto; /* Center the image */
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    max-width: 1100px; /* Limit width for smaller screens */
+  }
+
+  .hero-title h1 {
+    font-size: 64px; /* Adjust font size */
+  }
+
+  .hero-photo img {
+    max-width: 90%; /* Adjust image size for medium screens */
+  }
+}
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .hero-content {
@@ -139,6 +166,24 @@
 
   .hero-ordination {
     margin-top: 10px; /* Add spacing for alignment */
+  }
+
+  .hero-ordination h2 {
+    font-size: 20px; /* Smaller subtitle for very small screens */
+  }
+
+  .hero-ordination li {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .hero-photo img {
+    max-width: 90%; /* Slight reduction for better spacing */
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 36px; /* Further reduce title size */
+    line-height: 1.1; /* Adjust line spacing */
   }
 
   .hero-ordination h2 {

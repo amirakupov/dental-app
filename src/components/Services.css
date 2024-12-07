@@ -36,6 +36,21 @@
     display: none; /* Hide vertical text on very small screens */
   }
 }
+@media screen and (min-width: 1440px){
+  .vertical-text {
+    font-size: 110px; /* Larger font for large screens */
+    left: 160px; /* Closer to the column for large screens */
+    letter-spacing: 25px; /* Add more spacing between letters */
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  .vertical-text {
+    font-size: 130px; /* Extra-large font for ultra-wide monitors */
+    left: 680px; /* Keep closer to the column */
+    letter-spacing: 30px; /* Increase spacing between letters */
+  }
+}
 
 /* Columns Container */
 .services-columns {
@@ -76,6 +91,17 @@
     gap: 20px; /* Reduce spacing for smaller screens */
   }
 }
+@media screen and (min-width: 1440px) {
+  .services-column {
+    max-width: 700px; /* Slightly wider columns for larger screens */
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .services-column {
+    max-width: 800px; /* Wider columns for ultra-wide monitors */
+  }
+}
 
 .services-column.left-column {
   margin-left: 190px; 
@@ -108,6 +134,11 @@
   width: 25px; /* Adjust icon size */
   height: 25px;
 }
+@media screen and (min-width: 1440px) {
+  .services-column.left-column {
+    margin-left: 250px; /* Adjust margin for large screens */
+  }
+}
 
 @media screen and (max-width: 480px) {
   .service-item .icon {
@@ -132,6 +163,17 @@
     font-style: italic;
   }
 }
+@media screen and (min-width: 1440px) {
+  .service-title {
+    font-size: 24px; /* Larger text for larger screens */
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .service-title {
+    font-size: 28px; /* Extra large text for ultra-wide monitors */
+  }
+}
 
 /* Service Description */
 .service-description {
@@ -146,5 +188,18 @@
     font-size: 14px; /* Smaller text for descriptions */
     line-height: 1.4;
     margin-top: 4px; /* Add spacing between title and description */
+  }
+}
+@media screen and (min-width: 1440px) {
+  .service-description {
+    font-size: 18px; /* Larger text for readability on big screens */
+    line-height: 1.6; /* Slightly relaxed line spacing */
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .service-description {
+    font-size: 20px; /* Larger text for ultra-wide monitors */
+    line-height: 1.7;
   }
 }
