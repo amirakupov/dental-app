@@ -1,0 +1,62 @@
+/* Ordination Section Styles */
+.ordination {
+    background-color: #f8f8f8; /* Light background */
+    padding: 1% 0; /* Spacing around the section */
+    text-align: center;
+  }
+  
+  .ordination-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin: 1px 0 1px;;
+    color: #333; /* Dark text color */
+  }
+  
+  .ordination-gallery {
+    padding: 75px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between items */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  }
+  
+  .ordination-item {
+    width: calc(25% - 20px);
+    max-width: 300px; /* Ensure max size for large screens */
+    text-align: center;
+  }
+  
+  .ordination-image {
+    width: 90%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ordination-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ordination-caption {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555; /* Medium grey for text */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .ordination-item {
+      width: calc(50% - 10px); /* 2 items per row on tablets */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .ordination-item {
+      width: 100%; /* 1 item per row on small screens */
+    }
+  }
+  

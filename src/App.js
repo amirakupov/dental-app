@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Team from './components/Team';
 import Footer from './components/Footer';
+import Ordination from './components/Ordination'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,9 @@ function App() {
           </div>
           <div id="TEAM">
             <Team />
+          </div>
+          <div id="ORDINATION">
+            <Ordination />
           </div>
           <div id="KONTAKT">
             <Footer />

@@ -20,7 +20,7 @@ const servicesLeftColumn = [
   },
   {
     title: "Kieferorthopädie",
-    description: "MODERNE kieferorthopädische Behandlungen"
+    description: "MODERNE kieferorthopädische Behandlungen",
   },
 ];
 
