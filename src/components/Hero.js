@@ -1,7 +1,10 @@
 import React from 'react';
 import './Hero.css';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -17,15 +20,15 @@ const Hero = () => {
 
         {/* Ordination Times on the Right */}
         <div className="hero-ordination">
-          <h2>ORDINATIONSZEITEN:</h2>
+          <h2>{t('ordinationTimes.title')}</h2>
           <ul>
-            <li>MONTAG: 12:00 - 18:00</li>
-            <li>DIENSTAG: 9:00 - 15:00</li>
-            <li>MITTWOCH: 9:00 - 18:00</li>
-            <li>DONNERSTAG: 9:00 - 13:00</li>
-            <li>FREITAG: GESCHLOSSEN</li>
-            <li>SAMSTAG: GESCHLOSSEN</li>
-            <li>SONNTAG: GESCHLOSSEN</li>
+            <li>{t('ordinationTimes.monday')}</li>
+            <li>{t('ordinationTimes.tuesday')}</li>
+            <li>{t('ordinationTimes.wednesday')}</li>
+            <li>{t('ordinationTimes.thursday')}</li>
+            <li>{t('ordinationTimes.friday')}</li>
+            <li>{t('ordinationTimes.saturday')}</li>
+            <li>{t('ordinationTimes.sunday')}</li>
           </ul>
         </div>
       </div>

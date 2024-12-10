@@ -1,56 +1,17 @@
 import React from 'react';
 import './Services.css';
+import { useTranslation } from 'react-i18next';
 
-const servicesLeftColumn = [
-  {
-    title: "Prophylaxe & Zahnreinigung",
-    description: "Professionelle Zahnreinigung (PZR)Parodontitisbehandlung Individuelle Beratung zur Mundhygiene",
-  },
-  {
-    title: "Zahnersatz",
-    description: "Kronen, Brücken und Prothesen Implantatgetragener Zahnersatz Total und Teilprothesen",
-  },
-  {
-    title: "Füllungstherapie",
-    description: "Zahnfüllungen aus Kunststoff oder Keramik Amalgamfreie Füllungen Reparaturen und Inlays",
-  },
-  {
-    title: "Zahnimplantate",
-    description: "Individuelle Implantatversorgung Knochentransplantation und Augmentation Sofortimplantation",
-  },
-  {
-    title: "Kieferorthopädie",
-    description: "MODERNE kieferorthopädische Behandlungen",
-  },
-];
-
-const servicesRightColumn = [
-  {
-    title: "Wurzelbehandlung",
-    description: "Moderne Wurzelkanalbehandlung Schmerzarme Verfahren Erfolgskontrolle und Nachbehandlung",
-  },
-  {
-    title: "Ästhetische Zahnmedizin",
-    description: "Zahnaufhellung (Bleaching) Veneers und Lumineers Zahnumformung und kosmetische Korrekturen",
-  },
-  {
-    title: "Notfallbehandlung",
-    description: "Akute Zahnschmerzen und Verletzungen Zahnunfälle und Zahnausfall Schmerztherapie und sofortige Hilfe",
-  },
-  {
-    title: "Beratung und Diagnostik",
-    description: "Umfassende zahnärztliche Untersuchung Röntgenuntersuchung und digitale Bildgebung Individuelle Therapieplanung",
-  },
-  {
-    title: "Kinderzahnheilkunde",
-    description: "Frühzeitige Kariesprophylaxe Fissurenversiegelung Kinderfreundliche Behandlungen",
-  },
-];
 
 const Services = () => {
+  const { t } = useTranslation();
+
+  const servicesLeftColumn = t('servicesLeftColumn', { returnObjects: true });
+  const servicesRightColumn = t('servicesRightColumn', { returnObjects: true });
+
   return (
     <section className="services">
-      <div className="vertical-text">LEISTUNGEN</div>
+      <div className="vertical-text">{t('servicesTitle')}</div>
       <div className="services-columns">
         {/* Left Column */}
         <div className="services-column left-column">
@@ -81,7 +42,6 @@ const Services = () => {
     </section>
   );
 };
-
 
 export default Services;
 

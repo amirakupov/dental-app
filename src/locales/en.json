@@ -1,0 +1,118 @@
+{
+    "home": "HOME",
+    "ordination": "ORDINATION",
+    "team": "TEAM",
+    "services": "SERVICES",
+    "contact": "CONTACT",
+    "callNow": "CALL NOW",
+    "heroTitle": {
+        "dr": "DR.MED.DENT.",
+        "name": "TATJANA LADSTÄTTER"
+      },
+    "ordinationTimes": {
+        "title": "ORDINATION TIMES:",
+        "monday": "MONDAY: 12:00 - 6:00 PM",
+        "tuesday": "TUESDAY: 9:00 AM - 3:00 PM",
+        "wednesday": "WEDNESDAY: 9:00 AM - 6:00 PM",
+        "thursday": "THURSDAY: 9:00 AM - 1:00 PM",
+        "friday": "FRIDAY: CLOSED",
+        "saturday": "SATURDAY: CLOSED",
+        "sunday": "SUNDAY: CLOSED"
+    },
+    "servicesTitle": "SERVICES",
+    "servicesLeftColumn": [
+      {
+        "title": "Prophylaxis & Teeth Cleaning",
+        "description": "Professional teeth cleaning (PZR) Periodontitis treatment Individual oral hygiene advice"
+      },
+      {
+        "title": "Dentures",
+        "description": "Crowns, bridges, and dentures Implant-supported dentures Complete and partial dentures"
+      },
+      {
+        "title": "Filling Therapy",
+        "description": "Dental fillings made of plastic or ceramic Amalgam-free fillings Repairs and inlays"
+      },
+      {
+        "title": "Dental Implants",
+        "description": "Individual implant care Bone transplantation and augmentation Immediate implantation"
+      },
+      {
+        "title": "Orthodontics",
+        "description": "Modern orthodontic treatments"
+      }
+    ],
+    "servicesRightColumn": [
+      {
+        "title": "Root Canal Treatment",
+        "description": "Modern root canal treatment Painless procedures Success control and follow-up treatment"
+      },
+      {
+        "title": "Aesthetic Dentistry",
+        "description": "Teeth whitening (bleaching) Veneers and lumineers Tooth reshaping and cosmetic corrections"
+      },
+      {
+        "title": "Emergency Treatment",
+        "description": "Acute toothaches and injuries Tooth accidents and tooth loss Pain therapy and immediate help"
+      },
+      {
+        "title": "Consultation and Diagnostics",
+        "description": "Comprehensive dental examination X-ray examination and digital imaging Individual therapy planning"
+      },
+      {
+        "title": "Pediatric Dentistry",
+        "description": "Early cavity prevention Fissure sealing Child-friendly treatments"
+      }
+    ],
+    "teamTitle": "OUR TEAM",
+    "teamMembers": [
+      {
+        "name": "Tatjana Ladstätter",
+        "title": "Dentist"
+      },
+      {
+        "name": "Anton Seliverstov",
+        "title": "Orthodontist"
+      },
+      {
+        "name": "Anja Ercegovac",
+        "title": "Hygienist"
+      },
+      {
+        "name": "Lisa Vorkonyi",
+        "title": "Receptionist"
+      }
+    ],
+    "ordinationTitle": "ORDINATION",
+    "ordinationItems": [
+      {
+        "caption": "Modern Equipment"
+      },
+      {
+        "caption": "Aesthetic Interior"
+      },
+      {
+        "caption": "Many Rooms"
+      },
+      {
+        "caption": "Comfortable Waiting Area"
+      }
+    ],
+    "footer": {
+        "title": "Dr.med.dent Tatjana Ladstätter",
+        "address": {
+          "line1": "Brauhausstraße 1",
+          "line2": "2320 Schwechat",
+          "country": "Austria"
+        },
+        "contact": {
+          "phone": "+43 1 367 1607",
+          "email": "dr.ladstaetter.tanja@gmail.com"
+        },
+        "social": {
+          "instagram": "Instagram"
+        }
+    }
+}
+
+      

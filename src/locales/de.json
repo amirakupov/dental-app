@@ -1,0 +1,120 @@
+{
+    "home": "HOME",
+    "ordination": "ORDINATION",
+    "team": "TEAM",
+    "services": "LEISTUNGEN",
+    "contact": "KONTAKT",
+    "callNow": "CALL NOW",
+
+
+    "heroTitle": {
+      "dr": "DR.MED.DENT.",
+      "name": "TATJANA LADSTÄTTER"
+    },
+    "ordinationTimes": {
+      "title": "ORDINATIONSZEITEN:",
+      "monday": "MONTAG: 12:00 - 18:00",
+      "tuesday": "DIENSTAG: 9:00 - 15:00",
+      "wednesday": "MITTWOCH: 9:00 - 18:00",
+      "thursday": "DONNERSTAG: 9:00 - 13:00",
+      "friday": "FREITAG: GESCHLOSSEN",
+      "saturday": "SAMSTAG: GESCHLOSSEN",
+      "sunday": "SONNTAG: GESCHLOSSEN"
+    },
+    "servicesTitle": "LEISTUNGEN",
+    "servicesLeftColumn": [
+      {
+        "title": "Prophylaxe & Zahnreinigung",
+        "description": "Professionelle Zahnreinigung (PZR) Parodontitisbehandlung Individuelle Beratung zur Mundhygiene"
+      },
+      {
+        "title": "Zahnersatz",
+        "description": "Kronen, Brücken und Prothesen Implantatgetragener Zahnersatz Total und Teilprothesen"
+      },
+      {
+        "title": "Füllungstherapie",
+        "description": "Zahnfüllungen aus Kunststoff oder Keramik Amalgamfreie Füllungen Reparaturen und Inlays"
+      },
+      {
+        "title": "Zahnimplantate",
+        "description": "Individuelle Implantatversorgung Knochentransplantation und Augmentation Sofortimplantation"
+      },
+      {
+        "title": "Kieferorthopädie",
+        "description": "MODERNE kieferorthopädische Behandlungen"
+      }
+    ],
+    "servicesRightColumn": [
+      {
+        "title": "Wurzelbehandlung",
+        "description": "Moderne Wurzelkanalbehandlung Schmerzarme Verfahren Erfolgskontrolle und Nachbehandlung"
+      },
+      {
+        "title": "Ästhetische Zahnmedizin",
+        "description": "Zahnaufhellung (Bleaching) Veneers und Lumineers Zahnumformung und kosmetische Korrekturen"
+      },
+      {
+        "title": "Notfallbehandlung",
+        "description": "Akute Zahnschmerzen und Verletzungen Zahnunfälle und Zahnausfall Schmerztherapie und sofortige Hilfe"
+      },
+      {
+        "title": "Beratung und Diagnostik",
+        "description": "Umfassende zahnärztliche Untersuchung Röntgenuntersuchung und digitale Bildgebung Individuelle Therapieplanung"
+      },
+      {
+        "title": "Kinderzahnheilkunde",
+        "description": "Frühzeitige Kariesprophylaxe Fissurenversiegelung Kinderfreundliche Behandlungen"
+      }
+    ],
+    "teamTitle": "UNSER TEAM",
+    "teamMembers": [
+      {
+        "name": "Tatjana Ladstätter",
+        "title": "Zahnärztin"
+      },
+      {
+        "name": "Anton Seliverstov",
+        "title": "Kieferorthopäde"
+      },
+      {
+        "name": "Anja Ercegovac",
+        "title": "Zahnhygienikerin"
+      },
+      {
+        "name": "Lisa Vorkonyi",
+        "title": "Empfangsdame"
+      }
+    ],
+    "ordinationTitle": "ORDINATION",
+    "ordinationItems": [
+      {
+        "caption": "Moderne Ausstattung"
+      },
+      {
+        "caption": "Ästhetisches Interieur"
+      },
+      {
+        "caption": "Viele Zimmer"
+      },
+      {
+        "caption": "Bequemer Wartebereich"
+      }
+    ],
+    "footer": {
+        "title": "Dr.med.dent Tatjana Ladstätter",
+        "address": {
+          "line1": "Brauhausstraße 1",
+          "line2": "2320 Schwechat",
+          "country": "Österreich"
+        },
+        "contact": {
+          "phone": "+43 1 367 1607",
+          "email": "dr.ladstaetter.tanja@gmail.com"
+        },
+        "social": {
+          "instagram": "Instagram"
+        }
+    }
+}
+  
+  

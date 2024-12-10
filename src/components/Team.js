@@ -1,35 +1,26 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Team.css';
 
-const teamMembers = [
-  {
-    name: "Tatjana Ladstätter",
-    photo: "biba2.png",
-  },
-  {
-    name: "Anton Seliverstov",
-    photo: "biba1.png", 
-  },
-  {
-    name: "Anja Ercegovac",
-    photo: "biba45.png", 
-  },
-  {
-    name: "Lisa Vorkonyi",
-    photo: "biba3.png", 
-  },
+const teamPhotos = [
+  "biba2.png",
+  "biba1.png",
+  "biba45.png",
+  "biba3.png"
 ];
 
 const Team = () => {
+  const { t } = useTranslation();
+  const teamMembers = t('teamMembers', { returnObjects: true });
+
   return (
     <section className="team">
-      <h2>OUR TEAM</h2>
+      <h2>{t('teamTitle')}</h2>
       <div className="team-grid">
         {teamMembers.map((member, index) => (
-          <div key={index} className="team-member">
-            <img src={member.photo} alt={member.name} className="team-photo" />
+          <div key={index} className="team-member"> {/* Add the team-member class */}
+            <img src={teamPhotos[index]} alt={member.name} className="team-photo" />
             <h3>{member.name}</h3>
-            <p>{member.title}</p>
           </div>
         ))}
       </div>
@@ -38,4 +29,3 @@ const Team = () => {
 };
 
 export default Team;
-

@@ -76,6 +76,7 @@
   font-size: 16px;
 }
 
+/* Language Selector */
 .language {
   display: flex;
   align-items: center;
@@ -85,6 +86,7 @@
   position: relative;
   gap: 5px;
   transition: all 0.3s ease; /* Smooth transition */
+  z-index: 1500; /* Ensure it appears above other elements */
 }
 
 .language-dropdown {
@@ -105,7 +107,8 @@
   transition: all 0.3s ease; /* Smooth transition */
 }
 
-.language:hover .language-dropdown {
+.language:hover .language-dropdown,
+.language-dropdown.active {
   opacity: 1; /* Show dropdown */
   visibility: visible;
   transform: translateY(0); /* Slide into place */
@@ -121,6 +124,68 @@
 .language-dropdown li:hover {
   background-color: #f1f1f1; /* Light grey on hover */
 }
+
+/* Language Selector in Mobile Menu */
+.mobile-menu .language {
+  position: relative;
+  color: #ffffff; /* White text for visibility */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer;
+  text-align: center; /* Center the language label */
+  margin-top: 20px; /* Adjust spacing for better positioning */
+  margin-left: -10px; /* Center the button visually */
+}
+
+.mobile-menu .language-dropdown {
+  position: absolute;
+  top: 35px; /* Position dropdown below the button */
+  left: 50%; /* Center align */
+  transform: translateX(-50%); /* Adjust for center alignment */
+  background-color: #ffffff; /* White background for dropdown */
+  color: #272626; /* Dark text for visibility */
+  list-style: none;
+  padding: 8px 0;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  min-width: 140px; /* Ensure dropdown width */
+  z-index: 1000;
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially hidden for animation */
+  visibility: hidden;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.mobile-menu .language:hover .language-dropdown,
+.mobile-menu .language-dropdown.active {
+  display: block; /* Show dropdown when active */
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0); /* Smooth slide effect */
+}
+
+.mobile-menu .language-dropdown li {
+  padding: 8px 12px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu .language-dropdown li:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+  color: #272626; /* Consistent dark text */
+}
+
+/* Add a subtle hover effect for the language button */
+.language {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.language:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  color: #f1f1f1; /* Slightly lighter text color */
+}
+
 
 
 /* Burger Menu */
