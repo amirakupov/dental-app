@@ -1,10 +1,27 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaPhone, FaMailBulk, FaInstagram } from 'react-icons/fa';
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 import './Footer.css';
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: 'AIzaSyDw7Sn17bhWqaPxBai-1EV2Z5KE2EWPKTE',
+  });
+
+  const mapContainerStyle = {
+    width: '100%',
+    height: '300px',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+  };
+
+  const center = {
+    lat: 48.2082, // Latitude of your location
+    lng: 16.3738, // Longitude of your location
+  };
 
   return (
     <footer className="footer">
@@ -35,13 +52,19 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Right Section: Map Screenshot */}
+        {/* Right Section: Google Map */}
         <div className="footer-map">
-          <img
-            src="address-dental.png" // Update with the actual path
-            alt={t('footer.address.line1') + ', ' + t('footer.address.line2')}
-            className="static-map"
-          />
+          {isLoaded ? (
+            <GoogleMap
+              mapContainerStyle={mapContainerStyle}
+              center={center}
+              zoom={15}
+            >
+              <Marker position={center} />
+            </GoogleMap>
+          ) : (
+            <p>{t('loadingMap')}</p> // Display while the map is loading
+          )}
         </div>
       </div>
     </footer>

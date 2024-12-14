@@ -24,6 +24,8 @@ const Header = () => {
     i18n.changeLanguage(lang);
     setLanguageOpen(false); // Close dropdown after selection
   };
+  console.log("Language menu open:", languageOpen);
+
 
   return (
     <header className="header">
@@ -112,8 +114,8 @@ const Header = () => {
               {t('contact')}
             </Link>
           </li>
-          {/* Language Dropdown */}
-          <li className="language">
+          {/* Language Menu */}
+          <li className="language-menu">
             <div onClick={() => setLanguageOpen(!languageOpen)}>
               <span>{i18n.language.toUpperCase()}</span>
               <IoMdArrowDropdown className="dropdown-arrow" />
@@ -129,6 +131,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
     </header>
   );
 };
