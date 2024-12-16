@@ -83,7 +83,7 @@
 .hero-photo img {
   max-width: 77%; /* Responsive image */
   height: auto;
-  border-radius: 8px; /* Slight rounding of corners */
+  border-radius: 14px; /* Slight rounding of corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Shadow effect */
 }
 /* Extra Large Screens (28-inch monitors) */

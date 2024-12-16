@@ -8,7 +8,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyDw7Sn17bhWqaPxBai-1EV2Z5KE2EWPKTE',
+    googleMapsApiKey: 'AIzaSyDw7Snl7bhWqaPxBai-lEV2Z5KE2EWPKTE',
   });
 
   const mapContainerStyle = {

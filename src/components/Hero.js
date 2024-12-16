@@ -35,7 +35,7 @@ const Hero = () => {
 
       {/* Team Photo */}
       <div className="hero-photo">
-        <img src="hero.jpg" alt="Team" />
+        <img src="hero2.png" alt="Team" />
       </div>
     </section>
   );
