@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import { useTranslation } from 'react-i18next';
+import LazyLoad from "react-lazyload";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -35,7 +36,9 @@ const Hero = () => {
 
       {/* Team Photo */}
       <div className="hero-photo">
-        <img src="hero2.png" alt="Team" />
+        <LazyLoad height={200} offset={100}>
+          <img src="hero2.png" alt="Team" />
+        </LazyLoad>
       </div>
     </section>
   );

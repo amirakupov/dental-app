@@ -6,9 +6,16 @@ import Services from './components/Services';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import Ordination from './components/Ordination'
+import { Helmet } from "react-helmet";
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+  <Helmet>
+    <title>Zanharzt in Wien</title>
+    <meta name="description" content="Zanharzt in Wien" />
+    <meta name="keywords" content="Zanharzt in Wien, Dental, vienna" />
+  </Helmet>
 
   useEffect(() => {
     // Simulate a delay for demonstration
