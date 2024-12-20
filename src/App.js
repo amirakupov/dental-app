@@ -14,7 +14,7 @@ function App() {
   <Helmet>
     <title>Zanharzt in Wien</title>
     <meta name="description" content="Zanharzt in Wien" />
-    <meta name="keywords" content="Zanharzt in Wien, Dental, vienna" />
+    <meta name="keywords" content="Besuchen Sie die Zahnklinik von Dr. Tatjana Ladstätter für hochwertige zahnärztliche Leistungen. Informieren Sie sich über unsere Öffnungszeiten und buchen Sie noch heute einen Termin" />
   </Helmet>
 
   useEffect(() => {
